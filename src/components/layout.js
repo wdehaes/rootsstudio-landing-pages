@@ -24,7 +24,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
@@ -39,9 +38,30 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          <div class="flex-col justify-center items-center gap-[7px] inline-flex">
+            <div class="text-center text-white text-xs font-normal font-['League Spartan'] leading-[14.40px]">
+              Follow our journey
+              <br />
+              <br />
+            </div>
+            <div class="justify-center items-center gap-2.5 inline-flex">
+              <div class="text-center">
+                <span class="text-white text-xs font-normal font-['League Spartan'] leading-[17.52px]">
+                  {" "}
+                </span>
+                <span class="text-white text-[10px] font-normal font-['Content'] leading-[14.60px]">
+                  @
+                </span>
+                <span class="text-white text-xs font-normal font-['League Spartan'] leading-[17.52px]">
+                  rootsstudio
+                  <br />
+                  www.rootsstudio.com
+                  <br />
+                  <br />
+                </span>
+              </div>
+            </div>
+          </div>
         </footer>
       </div>
     </>
