@@ -1,28 +1,46 @@
+<script setup lang="ts">
+const target = ref<HTMLVideoElement | null>(null);
+
+// unref(target)?.addEventListener("loadstart", (event) => {
+//   console.log(
+//     "bla"
+//   );
+// });
+// unref(target)?.addEventListener("loadeddata", (event) => {
+//   console.log(
+//     "Yay! The readyState just increased to  " +
+//       "HAVE_CURRENT_DATA or greater for the first time.",
+//   );
+// });
+</script>
+
 <template>
   <div class="w-full bg-black">
     <div class="max-w-[480px] mx-auto">
       <header class="pt-16 flex flex-row justify-center">
-        <img src="~/assets/img/logos.svg" alt="Rurban X Nat Geo" />
+        <img src="~/assets/img/logos.png" alt="Rurban X Nat Geo" style="zoom:50%;" />
       </header>
       <main>
         <div class="flex flex-col gap-8 py-8">
           <p
-            class="text-center text-white text-sm font-medium font-['League Spartan']"
+            class="text-center text-white text-sm font-medium font-nils"
           >
             Combining Craftsmanship, Impact, and Intention
           </p>
           <video
             src="~/assets/video/weaving.mp4"
+            poster="~assets/img/video-poster.jpg"
             playsinline
             loop
             autoplay
             muted
+            controls
             ref="target"
           ></video>
 
           <div class="px-8 sm:px-12">
             <p
-              class="text-center text-white text-xs font-normal font-['League Spartan']"
+              class="text-center text-white text-xs font-normal font-nils"
             >
               Perched high in one of the world’s remaining biodiversity
               hotspots, Chizami village lies in the hilly forests of Nagaland,
@@ -40,9 +58,13 @@
           </div>
           <div class="px-8 sm:px-12">
             <p
-              class="text-center text-white text-xs font-normal font-['League Spartan']"
+              class="text-center text-white text-xs font-normal font-nils"
             >
-            The Chakhesang Nagas are practitioners of weaving their heritage loin cloth. From growing their own cotton, hand-spinning the yarn to weaving, Chizami women have great intergenerational expertise in weaving heritage textiles on the backstrap loin loom — one of the oldest looms still used by humans.
+              The Chakhesang Nagas are practitioners of weaving their heritage
+              loin cloth. From growing their own cotton, hand-spinning the yarn
+              to weaving, Chizami women have great intergenerational expertise
+              in weaving heritage textiles on the backstrap loin loom — one of
+              the oldest looms still used by humans.
             </p>
           </div>
           <div class="flex flex-row gap-3">
@@ -57,7 +79,7 @@
 
           <div class="px-8 sm:px-12">
             <p
-              class="text-center text-white text-xs font-normal font-['League Spartan']"
+              class="text-center text-white text-xs font-normal font-nils"
             >
               This portable device is characterized by a strap fixed to one end
               of the loom which the weavers wear around their waist, while
@@ -75,7 +97,7 @@
           </div>
           <div class="px-8 sm:px-12">
             <p
-              class="text-center text-white text-xs font-normal font-['League Spartan']"
+              class="text-center text-white text-xs font-normal font-nils"
             >
               This special product is created in collaboration between Rurban by
               Roots Studio and National Geographic, to celebrate the masterful
@@ -90,7 +112,7 @@
           </div>
           <div class="px-8 sm:px-12">
             <p
-              class="text-center text-white text-xs font-normal font-['League Spartan']"
+              class="text-center text-white text-xs font-normal font-nils"
             >
               Roots Studio reimagines cultural preservation and authorship by
               bridging Indigenous artists from around the world and global
@@ -106,27 +128,37 @@
         </div>
       </main>
       <footer class="flex flex-row justify-center pb-16">
-        <div class="flex-col justify-center items-center gap-[7px] inline-flex mx-auto">
-          <div
-            class="text-center text-white text-xs font-normal font-['League Spartan'] leading-[14.40px]"
+        <div class="flex-col justify-center items-center gap-2 flex mx-auto font-nils">
+          <span
+            class="block text-center text-white text-xs font-normal"
           >
-            Follow our journey<br /><br />
-          </div>
-          <div class="justify-center items-center gap-2.5 inline-flex">
-            <div class="text-center">
+            Follow our journey
+          </span>
+          <a
+            href="https://www.instagram.com/rootsstudio/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="flex flex-row gap-1.5">
+              <div>
+                <img src="~/assets/img/instagram.svg" alt="Rurban X Nat Geo" />
+              </div>
               <span
-                class="text-white text-xs font-normal font-['League Spartan'] leading-[17.52px]"
+                class="block text-white text-xs font-normal"
               >
-              </span
-              ><span
-                class="text-white text-[10px] font-normal font-['Content'] leading-[14.60px]"
-                >@</span
-              ><span
-                class="text-white text-xs font-normal font-['League Spartan'] leading-[17.52px]"
-                >rootsstudio<br />www.rootsstudio.com<br /><br
-              /></span>
+                <span class="text-[12px]">@</span>rootsstudio
+              </span>
             </div>
-          </div>
+          </a>
+
+          <a
+            href="https://www.rootsstudio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block text-white text-xs font-normal font-nils"
+          >
+            www.rootsstudio.com</a
+          >
         </div>
       </footer>
     </div>

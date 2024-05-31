@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Nils';
+    src: url('/assets/fonts/hts_nils_regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/hts_nils_regular-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+
+}
+@font-face {
+    font-family: 'Nils';
+    src: url('/assets/fonts/hts_nils_medium-webfont.woff2') format('woff2'),
+         url('/assets/fonts/hts_nils_medium-webfont.woff') format('woff');
+    font-style: normal;
+    font-style: 500;
+
+}
+
+@font-face {
+    font-family: 'Nils';
+    src: url('/assets/fonts/hts_nils_bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/hts_nils_bold-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+
+}
+@font-face {
+    font-family: 'Nils';
+    src: url('/assets/fonts/hts_nils_semibold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/hts_nils_semibold-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+html {
+    background-color: black;
+}

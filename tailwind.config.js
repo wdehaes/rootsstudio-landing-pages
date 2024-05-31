@@ -9,6 +9,9 @@ module.exports = {
       "./error.vue",
     ],
     theme: {
+      fontFamily: {
+        nils: ['Nils', 'sans-serif']
+      },
       extend: {},
     },
     plugins: [],
