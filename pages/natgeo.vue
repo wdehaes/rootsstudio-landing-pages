@@ -28,7 +28,6 @@ const target = ref<HTMLVideoElement | null>(null);
             Combining Craftsmanship, Impact, and Intention
           </p>
           <video
-            src="~/assets/video/weaving.mp4"
             poster="~assets/img/video-poster.jpg"
             playsinline
             loop
@@ -36,7 +35,10 @@ const target = ref<HTMLVideoElement | null>(null);
             muted
             controls
             ref="target"
-          ></video>
+          >
+          <source src="~/assets/video/weaving.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
           <div class="px-8 sm:px-12">
             <p
