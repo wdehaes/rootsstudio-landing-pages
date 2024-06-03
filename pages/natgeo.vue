@@ -42,14 +42,13 @@ const target = ref<HTMLVideoElement | null>(null);
 
           <div class="px-8 sm:px-12">
             <p
-              class="text-center text-white text-xs font-normal font-nils"
+              class="text-center text-white text-base font-normal font-nils"
             >
               Perched high in one of the world’s remaining biodiversity
               hotspots, Chizami village lies in the hilly forests of Nagaland,
-              one of the “Seven Sister ‘’ states in Northeast India. Home to the
+              one of the "Seven Sisters" states in Northeast India. Home to the
               Chakhesang Naga tribe, the local lifestyle in Chizami is largely
-              agrarian, centered around terrace farming in the mountainous
-              terrains.
+              agrarian, centered around terrace farming in the&nbsp;mountainous&nbsp;terrains.
             </p>
           </div>
           <div>
@@ -60,13 +59,13 @@ const target = ref<HTMLVideoElement | null>(null);
           </div>
           <div class="px-8 sm:px-12">
             <p
-              class="text-center text-white text-xs font-normal font-nils"
+              class="text-center text-white text-base font-normal font-nils"
             >
               The Chakhesang Nagas are practitioners of weaving their heritage
-              loin cloth. From growing their own cotton, hand-spinning the yarn
+              loin cloth. From growing their own cotton, hand-spinning the yarn
               to weaving, Chizami women have great intergenerational expertise
               in weaving heritage textiles on the backstrap loin loom — one of
-              the oldest looms still used by humans.
+              the oldest looms still used&nbsp;by&nbsp;humans.
             </p>
           </div>
           <div class="flex flex-row gap-3">
@@ -81,11 +80,11 @@ const target = ref<HTMLVideoElement | null>(null);
 
           <div class="px-8 sm:px-12">
             <p
-              class="text-center text-white text-xs font-normal font-nils"
+              class="text-center text-white text-base font-normal font-nils"
             >
               This portable device is characterized by a strap fixed to one end
-              of the loom which the weavers wear around their waist, while
-              individual straps on the other end are anchored to a tree or pole.
+              of the loom which the weavers wear around their waist, while
+              individual straps on the other end are anchored to a tree&nbsp;or&nbsp;pole.
             </p>
           </div>
           <img
@@ -99,14 +98,14 @@ const target = ref<HTMLVideoElement | null>(null);
           </div>
           <div class="px-8 sm:px-12">
             <p
-              class="text-center text-white text-xs font-normal font-nils"
+              class="text-center text-white text-base font-normal font-nils"
             >
               This special product is created in collaboration between Rurban by
               Roots Studio and National Geographic, to celebrate the masterful
               Indigenous Chizami weaves from Nagaland, India. It has been
               handwoven using 100% cotton yarn. It will keep you steady wherever
               life takes you, interwoven with National Geographic’s flag colors
-              representing sea, land, and sky.
+              representing sea, land,&nbsp;and&nbsp;sky.
             </p>
           </div>
           <div>
@@ -114,14 +113,13 @@ const target = ref<HTMLVideoElement | null>(null);
           </div>
           <div class="px-8 sm:px-12">
             <p
-              class="text-center text-white text-xs font-normal font-nils"
+              class="text-center text-white text-base font-normal font-nils"
             >
               Roots Studio reimagines cultural preservation and authorship by
               bridging Indigenous artists from around the world and global
               markets, with respect, reciprocity, and remuneration. For 10
               years, they have built an IP protected library of traditional art
-              and knowledge, with royalties traceable back to every artist and
-              community. 
+              and knowledge, with royalties traceable back to every artist&nbsp;and&nbsp;community.
             </p>
           </div>
           <div>
@@ -132,7 +130,7 @@ const target = ref<HTMLVideoElement | null>(null);
       <footer class="flex flex-row justify-center pb-16">
         <div class="flex-col justify-center items-center gap-2 flex mx-auto font-nils">
           <span
-            class="block text-center text-white text-xs font-normal"
+            class="block text-center text-white text-base font-normal"
           >
             Follow our journey
           </span>
@@ -146,7 +144,7 @@ const target = ref<HTMLVideoElement | null>(null);
                 <img src="~/assets/img/instagram.svg" alt="Rurban X Nat Geo" />
               </div>
               <span
-                class="block text-white text-xs font-normal"
+                class="block text-white text-base font-normal"
               >
                 <span class="text-[12px]">@</span>rootsstudio
               </span>
@@ -157,7 +155,7 @@ const target = ref<HTMLVideoElement | null>(null);
             href="https://www.rootsstudio.com"
             target="_blank"
             rel="noopener noreferrer"
-            class="block text-white text-xs font-normal font-nils"
+            class="block text-white text-base font-normal font-nils"
           >
             www.rootsstudio.com</a
           >
